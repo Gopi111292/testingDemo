@@ -1,0 +1,81 @@
+TestNG - Test New Generation 
+
+Java Based Testing Tool.
+
+Advantage
+1.Test Case & Test Suites
+2.Grouping of Test Cases 
+3. prioritize 
+4. parameterization
+5. parallel testing 
+6. reports 
+
+
+TestNG Conf
+
+1. install testng in eclipse 
+2. Add testng Libaray to build path / add testng dependency in pom.xml
+
+
+@ Test - annotation 
+
+
+1. TestNG executes test methods alphabetically if no priority is specified.
+2.Use @Test(priority=num) to define execution order.
+Priority can be any integer (positive, negative, or zero)
+3.Only methods annotated with @Test are executed.
+
+
+
+Annotation
+-----
+@Test  --- Methods with this annotation are executed as test cases.
+
+@BeforeSuite --- Executed once before all tests in the suite.
+@AfterSuite  --  Executed once after all tests in the suite.
+
+@BeforeTest  -- Runs before any <test> in the TestNG XML file.
+@AfterTest -- Executed after all test methods within a <test> tag are completed.
+
+@BeforeClass --- Runs once before the execution of all test methods in the class.
+@AfterClass  --- Executed once after all test methods in the class are completed.
+
+@BeforeMethod  -- Runs before every test method.
+@AfterMethod  -- Executed after every test method.
+
+The general execution flow for these annotations is:
+
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@BeforeMethod
+@Test
+@AfterMethod
+@AfterClass
+@AfterTest
+@AfterSuite
+
+
+Parameterization
+
+@DataProvider -- data driven Testing 
+
+Assert
+HardAssert -- Stops the execution of the current test method as soon as an assertion fails.
+
+SoftAssert  -- Collects all assertion failures and reports them at the end of the test method.
+
+gopi11@gmail.com
+gopi123
+
+
+
+
+
+
+
+
+
+Xpath 
+
+//tagename[@attribute name = 'value']
